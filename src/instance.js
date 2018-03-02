@@ -117,7 +117,7 @@ export default class Instance {
 
     string = this.toArray(string);
 
-    var doc = document.implementation.createHTMLDocument();
+    var doc = document.implementation.createHTMLDocument("");
     doc.body.innerHTML = string;
 
     //-- If it's designated, rake that bad boy for HTML tags and stuff.

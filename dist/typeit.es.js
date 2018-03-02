@@ -2,7 +2,7 @@
  *
  *   typeit - The most versatile animated typing utility on the planet.
  *   Author: Alex MacArthur <alex@macarthur.me> (https://macarthur.me)
- *   Version: v5.5.1
+ *   Version: v5.5.2
  *   URL: https://typeitjs.com
  *   License: GPL-2.0
  *
@@ -196,7 +196,7 @@ var Instance = function () {
 
       string = this.toArray(string);
 
-      var doc = document.implementation.createHTMLDocument();
+      var doc = document.implementation.createHTMLDocument("");
       doc.body.innerHTML = string;
 
       //-- If it's designated, rake that bad boy for HTML tags and stuff.
